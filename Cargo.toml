@@ -8,5 +8,10 @@ repository = "https://github.com/marmistrz/failure_ext"
 description = "Convenience extension traits for the failure error-handling crate"
 keywords = ["failure"]
 
+[features]
+default = []
+future_ext = ["futures"]
+
 [dependencies]
 failure = "0.1.5"
+futures = { version = "0.1.28", optional = true}
